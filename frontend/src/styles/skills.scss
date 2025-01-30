@@ -1,0 +1,223 @@
+.skills-container {
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  .skills-header {
+    margin-bottom: 3rem;
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #e0e7ff;
+      margin: 0;
+      font-family: "Sono", monospace;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin: 0.5rem 0 2rem;
+      color: #a5b4fc;
+    }
+  }
+
+  .skills-content {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    .continuous-improvements {
+      border: 1px solid #484b5b;
+      border-radius: 6px;
+      font-family: "Sono", monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title-contanier {
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+        .ci-title {
+          color: #ccc;
+          font-size: 12px;
+          font-weight: 500;
+
+        }
+      }
+
+      .contribution-grid {
+        display: flex;
+        gap: 4px;
+        padding: 10px;
+        // overflow-x: auto;
+        max-width: 100%;
+        white-space: nowrap;
+      }
+
+      .week-column {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .contribution-day {
+        width: 5px;
+        height: 5px;
+        background-color: rgba(165, 180, 252, 0.1);
+        position: relative;
+        transition: transform 0.1s ease;
+
+        &:hover {
+          transform: scale(1.3);
+          z-index: 2;
+          &::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 0;
+            left: 0;
+            // right:0;
+            transform: translateX(-50%);
+            background: #1e1b4b;
+            color: #a5b4fc;
+            padding: 1px 4px;
+            font-size: 8px;
+            white-space: nowrap;
+          }
+        }
+
+        &.level-1 {
+          background-color: #1e1e1e;
+        }
+        &.level-2 {
+          background-color: rgba(165, 180, 252, 0.3);
+        }
+        &.level-3 {
+          background-color: rgba(165, 180, 252, 0.5);
+        }
+        &.level-4 {
+          background-color: rgba(165, 180, 252, 0.7);
+        }
+      }
+    }
+
+    .skill-group {
+      border: 1px solid #484b5b;
+      border-radius: 6px;
+      font-family: "Sono", monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      .skill-title {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        padding: 0;
+        margin: 0;
+        p{
+            font-size: 16px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            margin: 0;
+            color: #E0E7FF;
+        }
+      }
+
+      .skill-subtitle {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        p{
+            color: #484b5b;
+            font-size: 12px;
+            font-weight: 500;
+            padding-right: 14px;
+        }
+
+       
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+padding: 5rem 5rem 3rem 5rem;
+flex-direction: column;
+// align-items: left;
+gap: 0;
+.skills-header {
+    margin-bottom: 1rem;
+    h2 {
+      padding-left: 14px ;
+    }
+    .subtitle {
+        padding-left: 14px ;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    
+      padding: 3rem 1rem; 
+      flex-direction: column;
+      align-items: center; 
+  
+      .skills-header {
+        margin-bottom: 1rem;
+        width: 100%;
+        h2 {
+          font-size: 20px; // Reduce font size
+          padding-left:10px;
+        }
+        .subtitle {
+          font-size: 14px;
+          padding-left: 10px;
+        }
+      }
+  
+      .skills-content {
+        width: 100%;
+        margin: 0; // Remove margins to fit screen
+        gap: 0.5rem; // Reduce gaps between elements
+        .continuous-improvements, .skill-group {
+          width: 100%; 
+          padding: 0; 
+        }
+  
+        .contribution-grid {
+          flex-wrap: wrap; 
+          justify-content: center;
+          overflow-x: hidden; // Prevent horizontal scroll issues
+        }
+  
+        .contribution-day {
+          width: 4px; // Reduce dot size
+          height: 4px;
+        }
+        .skill-group {
+            .skill-title {
+                width: 100%;
+                p{
+                    font-size: 14px;
+                    padding: 10px;
+                }
+              }
+        
+              .skill-subtitle {
+                p{
+                    color: #484b5b;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding-right: 17px;
+                }
+        }
+      }
+    }
+  
+  
+}}
