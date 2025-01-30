@@ -1,0 +1,89 @@
+.three-d-container {
+    position: relative;
+    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 200px;
+    }
+    .codepen,
+    .web {
+      transform: translateY(-50%);
+      opacity: 0.5;
+      // animation: float 5s ease-in-out infinite;
+    }
+    .codepen {
+      animation: float 18s ease-in-out infinite;
+      animation-delay: 15s;
+    }
+    .web {
+      animation: float 20s ease-in-out infinite;
+      animation-delay: 5s;
+    }
+    .github {
+      transform: translateY(50%);
+      opacity: 0.5;
+      animation: float 22s ease-in-out infinite;
+      animation-delay: 10s;
+    }
+  }
+}
+// @keyframes float {
+//     0% {
+//         transform: translateY(-70px);
+//         opacity: 0.5;
+//       }
+
+//       40% {
+//         opacity: 0.5;    // Fully visible for longer
+//         transform: translateY(0);
+//       }
+
+//       70% {
+//         transform: translateY(0);
+//         opacity: 0.5;  
+//       }
+//       100% {
+//         transform: translateY(70px);
+//         opacity: 0.5;
+//       }
+// }
+// @keyframes float {
+//     0% {
+//       transform: translateY(-70px);
+//     }
+//     50% {
+//       transform: translateY(10px);
+//     }
+//     100% {
+//       transform: translateY(-70px);
+//     }
+//   }
+@keyframes float {
+    0% {
+      transform: translateY(-70px) translateX(-20px); // Slight leftward drift
+    }
+    25% {
+      transform: translateY(-30px) translateX(10px); // Moves slightly right
+    }
+    50% {
+      transform: translateY(10px) translateX(20px); // Peak movement down & further right
+    }
+    75% {
+      transform: translateY(-30px) translateX(10px); // Moves back left
+    }
+    100% {
+      transform: translateY(-70px) translateX(-20px); // Back to start position
+    }
+  }

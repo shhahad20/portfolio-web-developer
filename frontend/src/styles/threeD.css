@@ -1,0 +1,113 @@
+.three-d-container {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+}
+
+.three-d-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.three-d-container .container img {
+  width: 200px;
+}
+
+.three-d-container .container .codepen,
+.three-d-container .container .web {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.three-d-container .container .codepen {
+  -webkit-animation: float 18s ease-in-out infinite;
+          animation: float 18s ease-in-out infinite;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.three-d-container .container .web {
+  -webkit-animation: float 20s ease-in-out infinite;
+          animation: float 20s ease-in-out infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.three-d-container .container .github {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0.5;
+  -webkit-animation: float 22s ease-in-out infinite;
+          animation: float 22s ease-in-out infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(-70px) translateX(-20px);
+            transform: translateY(-70px) translateX(-20px);
+  }
+  25% {
+    -webkit-transform: translateY(-30px) translateX(10px);
+            transform: translateY(-30px) translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px) translateX(20px);
+            transform: translateY(10px) translateX(20px);
+  }
+  75% {
+    -webkit-transform: translateY(-30px) translateX(10px);
+            transform: translateY(-30px) translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-70px) translateX(-20px);
+            transform: translateY(-70px) translateX(-20px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(-70px) translateX(-20px);
+            transform: translateY(-70px) translateX(-20px);
+  }
+  25% {
+    -webkit-transform: translateY(-30px) translateX(10px);
+            transform: translateY(-30px) translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px) translateX(20px);
+            transform: translateY(10px) translateX(20px);
+  }
+  75% {
+    -webkit-transform: translateY(-30px) translateX(10px);
+            transform: translateY(-30px) translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-70px) translateX(-20px);
+            transform: translateY(-70px) translateX(-20px);
+  }
+}
+/*# sourceMappingURL=threeD.css.map */
