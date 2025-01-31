@@ -5,9 +5,7 @@ const About = () => {
     <section id="about-section">
       <div className="about-container">
         <div className="code-border-container">
-        {/* <div className="code-intro-conatiner">
-          <div className="code-intro"><p>print(<span className="highlight">"Meet the Code Whisperer."</span>)</p> <div className="code-span"></div></div>
-        </div> */}
+
         <code className="top-code">print("Meet the Code whisperer.")</code>
         <div className="content-box">
           <p className="p-text">
