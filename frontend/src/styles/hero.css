@@ -1,8 +1,8 @@
 #hero-section {
   position: relative;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a0917), to(#121212));
-  background: linear-gradient(to bottom, #0a0917, #121212);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a0917), to(#111111));
+  background: linear-gradient(to bottom, #0a0917, #111111);
   height: 100vh;
   width: 100%;
   padding: 0;
