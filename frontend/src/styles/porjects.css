@@ -1,0 +1,162 @@
+.projects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects-section .project-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.projects-section .project-container .project-header {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects-section .project-container .project-header h2 {
+  font-family: "Sono", monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: #e0e7ff;
+}
+
+.projects-section .project-container .projects-grid {
+  width: 100%;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects-section .project-container .projects-grid .project-card {
+  border: 1px solid #484B5B;
+  border-radius: 6px;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 0;
+}
+
+.projects-section .project-container .projects-grid .project-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.projects-section .project-container .projects-grid .project-card .project-title {
+  color: #E0E7FF;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projects-section .project-container .projects-grid .project-card .description {
+  color: #ccc;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-section .project-container .projects-grid .project-card .details {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.projects-section .project-container .projects-grid .project-card .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .projects-section {
+    padding: 0rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 5rem 5rem 3rem 5rem;
+  }
+  .projects-section .project-container .projects-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+  .projects-section .project-container .projects-grid .project-card {
+    min-height: auto;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 1.5rem 1rem;
+  }
+  .projects-section .project-container .project-header {
+    margin-bottom: 1rem;
+  }
+  .projects-section .project-container .project-header h2 {
+    font-size: 1.25rem;
+  }
+  .projects-section .project-container .projects-grid {
+    gap: 1rem;
+  }
+  .projects-section .project-container .projects-grid .project-card {
+    padding: 1rem;
+  }
+  .projects-section .project-container .projects-grid .project-card .project-title {
+    font-size: 1rem;
+  }
+  .projects-section .project-container .projects-grid .project-card .description {
+    font-size: 0.875rem;
+  }
+  .projects-section .project-container .projects-grid .project-card .icons {
+    gap: 10px;
+  }
+}
+/*# sourceMappingURL=porjects.css.map */

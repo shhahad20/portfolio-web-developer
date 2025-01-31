@@ -65,6 +65,36 @@
           animation-delay: 10s;
 }
 
+@media (max-width: 1200px) {
+  .three-d-container {
+    height: 30vh;
+  }
+  .three-d-container .container {
+    gap: 10rem;
+  }
+  .three-d-container .container img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .three-d-container .container {
+    gap: 7rem;
+  }
+  .three-d-container .container img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .three-d-container .container {
+    gap: 4rem;
+  }
+  .three-d-container .container img {
+    width: 80px;
+  }
+}
+
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translateY(-70px) translateX(-20px);

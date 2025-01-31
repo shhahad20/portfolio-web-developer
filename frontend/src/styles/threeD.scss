@@ -1,6 +1,6 @@
 .three-d-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,52 +38,54 @@
       animation-delay: 10s;
     }
   }
-}
-// @keyframes float {
-//     0% {
-//         transform: translateY(-70px);
-//         opacity: 0.5;
-//       }
 
-//       40% {
-//         opacity: 0.5;    // Fully visible for longer
-//         transform: translateY(0);
-//       }
-
-//       70% {
-//         transform: translateY(0);
-//         opacity: 0.5;  
-//       }
-//       100% {
-//         transform: translateY(70px);
-//         opacity: 0.5;
-//       }
-// }
-// @keyframes float {
-//     0% {
-//       transform: translateY(-70px);
-//     }
-//     50% {
-//       transform: translateY(10px);
-//     }
-//     100% {
-//       transform: translateY(-70px);
-//     }
-//   }
-@keyframes float {
-    0% {
-      transform: translateY(-70px) translateX(-20px); // Slight leftward drift
-    }
-    25% {
-      transform: translateY(-30px) translateX(10px); // Moves slightly right
-    }
-    50% {
-      transform: translateY(10px) translateX(20px); // Peak movement down & further right
-    }
-    75% {
-      transform: translateY(-30px) translateX(10px); // Moves back left
-    }
-    100% {
-      transform: translateY(-70px) translateX(-20px); // Back to start position
+  // Media Queries
+  @media (max-width: 1200px) {
+    // padding: 0rem 4rem;
+    // border: 1px dashed white;
+    height: 30vh;
+    .container {
+      gap: 10rem;
+      img {
+        width: 150px;
+      }
     }
   }
+  @media (max-width: 768px) {
+    // padding: 5rem 5rem 3rem 5rem;;
+        // border: 1px dashed white;
+    .container {
+      gap: 7rem;
+      img {
+        width: 120px;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    // border: 1px dashed white;
+    .container {
+      gap: 4rem;
+      img {
+        width: 80px;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-70px) translateX(-20px); // Slight leftward drift
+  }
+  25% {
+    transform: translateY(-30px) translateX(10px); // Moves slightly right
+  }
+  50% {
+    transform: translateY(10px) translateX(20px); // Peak movement down & further right
+  }
+  75% {
+    transform: translateY(-30px) translateX(10px); // Moves back left
+  }
+  100% {
+    transform: translateY(-70px) translateX(-20px); // Back to start position
+  }
+}
