@@ -84,9 +84,17 @@
   .three-d-container .container img {
     width: 120px;
   }
+  .three-d-container .container .codepen,
+  .three-d-container .container .web, .three-d-container .container .github {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 480px) {
+  .three-d-container {
+    visibility: hidden;
+    height: 0;
+  }
   .three-d-container .container {
     gap: 4rem;
   }
