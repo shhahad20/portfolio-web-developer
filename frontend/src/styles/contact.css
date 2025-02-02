@@ -136,11 +136,11 @@
     padding: 0 4.5rem;
     height: 60vh;
   }
-  .contact-section .container {
+  .contact-section .section-container .container {
     gap: 5rem;
     padding: 1.5rem 2rem;
   }
-  .contact-section .email-container .email {
+  .contact-section .section-container .container .email-container .email {
     padding: 0 3rem;
   }
 }
